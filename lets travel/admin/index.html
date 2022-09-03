@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+    <header class="mb-5">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Musafir Travel</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/admin">Admin Page</a>
+                        </li>
+    
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="tel" placeholder="Conatct Number"
+                            aria-label="Contact Number">
+                        <button class="btn btn-outline-primary text-nowrap" type="submit">Call me</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <script src="../js/bootstrap.min.js"></script>
+    <main>
+        <div class="container shadow p-3 mb-5 bg-body rounded">
+            <h1 class="text-center">Admin Page</h1>
+            <hr>
+            <div class="d-flex align-items-start">
+                <div class="nav flex-column nav-pills me-3 border rounded w-25 p-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link active" id="v-pills-articles-tab" data-bs-toggle="pill" data-bs-target="#v-pills-articles"
+                        type="button" role="tab" aria-controls="v-pills-articles" aria-selected="true">Articles</button>
+                    <button class="nav-link" id="v-pills-mails-tab" data-bs-toggle="pill" data-bs-target="#v-pills-mails"
+                        type="button" role="tab" aria-controls="v-pills-mails" aria-selected="false">Mails</button>
+                    <button class="nav-link" id="v-pills-callback-tab" data-bs-toggle="pill" data-bs-target="#v-pills-callback"
+                        type="button" role="tab" aria-controls="v-pills-callback" aria-selected="false" >Callback requests</button>
+                </div>
+                <div class="tab-content border rounded w-75 p-3" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-articles" role="tabpanel" aria-labelledby="v-pills-articles-tab"
+                        tabindex="0">
+                        <button class="btn btn-primary mb-3">Add post</button>
+                        <table class="table table-striped">
+                            <tr>
+                                <td>1</td>
+                                <td>Taj Mahal</td>
+                                <td>2012-11-12</td>
+                                <td>India</td>
+                                <td><button class="btn btn-link p-0 text-decoration-none">Edit</button></td>
+                                <td><button class="btn btn-link p-0 text-decoration-none">X</button></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Taj Mahal</td>
+                                <td>2012-11-12</td>
+                                <td>India</td>
+                                <td><button class="btn btn-link p-0 text-decoration-none">Edit</button></td>
+                                <td><button class="btn btn-link p-0 text-decoration-none">X</button></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Taj Mahal</td>
+                                <td>2012-11-12</td>
+                                <td>India</td>
+                                <td><button class="btn btn-link p-0 text-decoration-none">Edit</button></td>
+                                <td><button class="btn btn-link p-0 text-decoration-none">X</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-mails" role="tabpanel" aria-labelledby="v-pills-mails-tab"
+                        tabindex="0">Mails Content</div>
+                    <div class="tab-pane fade" id="v-pills-callback" role="tabpanel" aria-labelledby="v-pills-callback-tab"
+                        tabindex="0">Callback requests content</div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
