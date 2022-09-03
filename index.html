@@ -154,19 +154,30 @@
 
     </footer>
 
-    <div class="modal" tabindex="-1" id="contact-us-modal">
+    <div class="modal fade" tabindex="-1" id="contact-us-modal">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
+                    <h5 class="modal-title">Contact Us</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Modal body text goes here.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Name" >
+                        </div>
+                        <div class="mb-3">
+                            <label for="Number" class="form-label">Contact Number</label>
+                            <input type="tel" class="form-control" id="number" placeholder="Contact number">
+                        </div>
+                        <div class="mb-3">
+                            <label for="msg" class="form-label">Message</label>
+                            <textarea class="form-control" id="msg"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>
